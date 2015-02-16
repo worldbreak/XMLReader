@@ -1,0 +1,10 @@
+set terminal pdf
+set output 'out.pdf'
+set xrange [0:1440]
+set yrange [0:50]
+set style data histogram
+set style histogram cluster gap 1
+set style fill solid border -1
+set boxwidth 0.9
+set xtic rotate by -45 scale 0
+plot 'histogram.txt' using 1
